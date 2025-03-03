@@ -12,15 +12,12 @@ The gateway translates the registers and values as needed.
 3. After the installation is complete, you need to restart `VisualStudioCode`
 4. After restarting `VisualStudioCode`, select `File` in the upper left corner of `VisualStudioCode` -> `Open Folder` -> select the `LilyGO T-ETH-Series` directory
 5. Wait for the installation of third-party dependent libraries to complete
-6. Click on the `platformio.ini` file, and in the `platformio` column
-7. First change the default_envs to the board used
-8. Uncomment one of the lines src_dir = xxxx to make sure only one line works
-9. Click the (✔) symbol in the lower left corner to compile
-10. Connect the board to the computer USB (If there is no onboard downloader, USB2TTL must be connected)
-11. Click (→) to upload firmware
-12. Click (plug symbol) to monitor serial output
-13. Since **T-LITE-ESP32** uses **IO0** as the clock input, the default working level of **DTR** is high level, so after the download is completed, you need to remove the connection between **DTR** and **IO0**, so that ETH will work, otherwise the initialization will fail
-14. For **T-LITE-ESP32**, when uploading a sketch, you need to press and hold the *BOOT* button to run the upload
+7. Click the (✔) symbol in the lower left corner to compile
+8. Connect the board to the computer USB (If there is no onboard downloader, USB2TTL must be connected)
+9. Click (→) to upload firmware
+10. Click (plug symbol) to monitor serial output
+11. Since **T-LITE-ESP32** uses **IO0** as the clock input, the default working level of **DTR** is high level, so after the download is completed, you need to remove the connection between **DTR** and **IO0**, so that ETH will work, otherwise the initialization will fail
+12. For **T-LITE-ESP32**, when uploading a sketch, you need to press and hold the *BOOT* button to run the upload
 
 <h2 align = "left">6️⃣ FAQ </h2>
 
