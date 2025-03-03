@@ -62,14 +62,6 @@ The gateway translates the registers and values as needed.
 9. Since **T-LITE-ESP32** uses **IO0** as the clock input, the default working level of **DTR** is high level, so after the download is completed, you need to remove the connection between **DTR** and **IO0**, so that ETH will work, otherwise the initialization will fail
 10. **T-LITE-ESP32** Since the `PHYAD` address is selected as 0, the yellow LINK light will not light up, which does not affect the use.
 
-<h2 align = "left">5️⃣ ESP32 basic examples </h2>
-
-* [BLE Examples](https://github.com/espressif/arduino-esp32/tree/master/libraries/BLE)
-* [WiFi Examples](https://github.com/espressif/arduino-esp32/tree/master/libraries/WiFi)
-* [SPIFFS Examples](https://github.com/espressif/arduino-esp32/tree/master/libraries/SPIFFS)
-* [FFat Examples](https://github.com/espressif/arduino-esp32/tree/master/libraries/FFat)
-* For more examples of esp32 chip functions, please refer to [arduino-esp32-libraries](https://github.com/espressif/arduino-esp32/tree/master/libraries)
-
 <h2 align = "left">6️⃣ FAQ </h2>
 
 1. Unable to upload sketch,Please enter the upload mode manually.
