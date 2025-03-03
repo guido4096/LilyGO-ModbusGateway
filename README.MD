@@ -22,46 +22,6 @@ The gateway translates the registers and values as needed.
 13. Since **T-LITE-ESP32** uses **IO0** as the clock input, the default working level of **DTR** is high level, so after the download is completed, you need to remove the connection between **DTR** and **IO0**, so that ETH will work, otherwise the initialization will fail
 14. For **T-LITE-ESP32**, when uploading a sketch, you need to press and hold the *BOOT* button to run the upload
 
-
-## 2️⃣ Arduino IDE Quick Start
-* It is recommended to use platformio without cumbersome steps
-1. Install [Arduino IDE](https://www.arduino.cc/en/software)
-2. Install [Arduino ESP32](https://docs.espressif.com/projects/arduino-esp32/en/latest/)
-3. Copy everything from this repository [lib folder](./lib/)  to Arduino library folder (e.g. C:\Users\YourName\Documents\Arduino\libraries)
-4. Open ArduinoIDE -> Tools
-   ![ArduinoIDE](image/ArduinoIDE.jpg)
-5. `T-ETH-Elite` options are the same as `T-ETH-Lite`, but you need to adjust `USB CDC On Boot` to `Enabled`
-5. Open the [examples](./examples/),such as [examples/UnitTestExample](./examples/UnitTestExample)
-6. Switch to the [utilities.h](./examples/UnitTestExample/utilities.h) file, at the top of the sketch, uncomment the definition of the board name you use , such as **LILYGO_T_INTERNET_POE**
-7. Connect external [USB2TTL](https://www.amazon.com/usb-ttl-adapter/s?k=usb+to+ttl+adapter)，such as **CP2102,CP2104,CH340X**
-      * Has an onboard downloader(**T-POE-Pro**)
-          If the board has a USB-C, plug it directly into the USB-C, select the corresponding port, and upload.
-      * no onboard downloader(**T-ETH-Lite-ESP32/T-ETH-Lite-ESP32S3/T-Internet-POE**)
-          Additional USB2TTL is required to connect the board with USB2TTL
-      * Connection example:
-
-
-        | USB2TTL(Has DTR,RTS) | USB2TTL(NO DTR,RTS) | T-ETH-Series |
-        | -------------------- | ------------------- | ------------ |
-        | 5V                   | 5V                  | 5V IN        |
-        | GND                  | GND                 | GND          |
-        | RX                   | RX                  | TXD          |
-        | TX                   | TX                  | RXD          |
-        | RTS                  |                     | RST          |
-        | DTR                  |                     | IO0          |
-
-     * Connection diagram
-  
-        ![connect](./image/connect.jpg)
-
-     *  **Note that for boards that are not connected to DTR or RTS, the board must be put into download mode before uploading the sketch, otherwise the sketch cannot be uploaded.How to enter download mode, please see FAQ**
-     *  **注意，对于没有连接到DTR,RTS 的板子，上传程序之前，必须先将板子置入下载模式,否则无法上传程序，如何进入下载模式，请看FAQ**
-
-
-8. Select the corresponding port and click Upload <If the upload fails, View the FAQ below>
-9. Since **T-LITE-ESP32** uses **IO0** as the clock input, the default working level of **DTR** is high level, so after the download is completed, you need to remove the connection between **DTR** and **IO0**, so that ETH will work, otherwise the initialization will fail
-10. **T-LITE-ESP32** Since the `PHYAD` address is selected as 0, the yellow LINK light will not light up, which does not affect the use.
-
 <h2 align = "left">6️⃣ FAQ </h2>
 
 1. Unable to upload sketch,Please enter the upload mode manually.
