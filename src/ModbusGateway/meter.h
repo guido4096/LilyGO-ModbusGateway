@@ -1,5 +1,13 @@
-#ifndef _METER_H
-#define _METER_H
+/**
+ * @file      meter.h
+ * @author    Guido Jansen (guido@l-agraph.be)
+ * @license   MIT
+ * @copyright Copyright (c) 2025 l'agraph
+ * @date      04-Mar-2025
+ * @note      Definitions to support formalization modbus register definitions
+ */
+#pragma once
+
 
 #include <Arduino.h>
 #include <vector>
@@ -366,4 +374,3 @@ class Slave
     std::vector<BlockValues>   _blockValues;
 };
 
-#endif

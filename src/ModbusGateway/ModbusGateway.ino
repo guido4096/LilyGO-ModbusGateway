@@ -1,10 +1,10 @@
 /**
- * @file      HelloServer.ino
- * @author    Lewis He (lewishe@outlook.com)
+ * @file      meter.h
+ * @author    Guido Jansen (guido@l-agraph.be)
  * @license   MIT
- * @copyright Copyright (c) 2023  Shenzhen Xin Yuan Electronic Technology Co., Ltd
- * @date      2023-07-26
- *
+ * @copyright Copyright (c) 2025 l'agraph
+ * @date      04-Mar-2025
+ * @note      Setup and main loop to mediate between SolarEdge and the EnergyMeter
  */
 #include <Arduino.h>
 #if ESP_ARDUINO_VERSION < ESP_ARDUINO_VERSION_VAL(3, 0, 0)
@@ -300,10 +300,6 @@ void setup()
     }
 
     server.on("/", handleRoot);
-
-    server.on("/inline", []()
-              { server.send(200, "text/plain", "this works as well"); });
-
     server.onNotFound(handleNotFound);
 
     server.begin();

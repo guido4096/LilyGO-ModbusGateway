@@ -1,3 +1,11 @@
+/**
+ * @file      meter.h
+ * @author    Guido Jansen (guido@l-agraph.be)
+ * @license   MIT
+ * @copyright Copyright (c) 2025 l'agraph
+ * @date      04-Mar-2025
+ * @note      EM24 Modbus Definitions
+ */
 #include <Arduino.h>
 #include <em24.h>
 #include <vector>
