@@ -16,7 +16,7 @@
 class EM24
 {
     public:
-    static std::vector<ModbusRegisterBlock> getRegisterBlocks();
+    static std::vector<modbus::RegisterBlock> getRegisterBlocks();
 
 };
 

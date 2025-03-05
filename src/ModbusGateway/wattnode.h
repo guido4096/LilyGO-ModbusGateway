@@ -16,7 +16,7 @@
 class WattNode
 {
     public:
-    static std::vector<ModbusRegisterBlock> getRegisterBlocks();
+    static std::vector<modbus::RegisterBlock> getRegisterBlocks();
 
 };
 
