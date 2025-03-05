@@ -33,7 +33,7 @@
     3 1 1
 */
 
-std::vector<modbus::RegisterBlock> WattNode::getRegisterBlocks() 
+std::vector<modbus::RegisterBlock> modbus::WattNode::getRegisterBlocks() 
 {
     std::vector<modbus::RegisterBlock> blocks; // byteorder=Endian.BIG, wordorder=Endian.LITTLE
 

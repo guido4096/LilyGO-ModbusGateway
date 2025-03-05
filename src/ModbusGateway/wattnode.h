@@ -13,10 +13,13 @@
 #include <meter.h>
 #include <vector>
 
-class WattNode
+namespace modbus
 {
-    public:
-    static std::vector<modbus::RegisterBlock> getRegisterBlocks();
+    class WattNode
+    {
+        public:
+        static std::vector<modbus::RegisterBlock> getRegisterBlocks();
 
-};
+    };
+}
 

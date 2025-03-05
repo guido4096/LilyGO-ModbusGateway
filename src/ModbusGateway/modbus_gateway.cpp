@@ -31,13 +31,13 @@ WebServer server(80);
 
 //TCP Master
 ModbusTCP tcp;
-modbus::Slave<EM24> meter;
+modbus::Slave<modbus::EM24> meter;
 IPAddress remote(192, 168, 20, 2);
 
 
 // RTU Slave
 ModbusRTU rtu;
-modbus::Master<WattNode> wattnode;
+modbus::Master<modbus::WattNode> wattnode;
 #define SLAVE_ID 2
 
 // Converter mapping

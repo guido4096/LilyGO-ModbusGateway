@@ -12,11 +12,13 @@
 #include <Arduino.h>
 #include <meter.h>
 #include <vector>
-
-class EM24
+namespace modbus
 {
-    public:
-    static std::vector<modbus::RegisterBlock> getRegisterBlocks();
+    class EM24
+    {
+        public:
+        static std::vector<modbus::RegisterBlock> getRegisterBlocks();
 
-};
+    };
 
+}

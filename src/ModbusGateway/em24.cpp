@@ -10,7 +10,7 @@
 #include <em24.h>
 #include <vector>
 
-std::vector<modbus::RegisterBlock> EM24::getRegisterBlocks() 
+std::vector<modbus::RegisterBlock> modbus::EM24::getRegisterBlocks() 
 {
     std::vector<modbus::RegisterBlock> blocks;
 
