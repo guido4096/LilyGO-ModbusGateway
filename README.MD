@@ -1,7 +1,7 @@
 <h1 align = "center">🌟LilyGO T-POE-PRO Modbus Gateway</h1>
 
 This is a gateway to connect a SolarEdge inverter to your own evergy meter. 
-The SolarEdge inverter connects to the LilyGO ETH-POE-PRO through Modbus-RTU.
+The SolarEdge inverter connects to the LilyGO ETH-POE-PRO through Modbus-RTU over RS-485.
 The LilyGO-POE-PRO connects to a Carlo Gavazzi EM24 through Modbus-TCP.
 The gateway translates the registers and values as needed.
 
